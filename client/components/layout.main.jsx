@@ -1,4 +1,4 @@
-import Navigations from '../navigations/index.jsx';
+import Navigations from './navigations.jsx';
 
 const Layout = ({content = () => null }) => (
   <div>

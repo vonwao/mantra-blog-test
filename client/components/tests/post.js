@@ -1,7 +1,7 @@
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 import {shallow} from 'enzyme';
-import Post from '../index.jsx';
+import Post from '../post.jsx';
 
 describe('components.post', () => {
   it('should display the post title', () => {

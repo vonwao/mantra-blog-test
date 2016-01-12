@@ -1,7 +1,7 @@
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 import {shallow} from 'enzyme';
-import Navigations from '../index.jsx';
+import Navigations from '../navigations.jsx';
 
 describe('components.navigations', () => {
   it('should contain a link to home', () => {
