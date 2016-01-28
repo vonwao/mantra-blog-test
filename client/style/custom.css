@@ -1,0 +1,101 @@
+/*body {*/
+    /*font: normal 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+/*}*/
+
+/*.footer {*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+/*}*/
+
+/*a {*/
+    /*color: #0060B6;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*a:hover*/
+/*{*/
+    /*color:#00A0C6;*/
+    /*text-decoration:none;*/
+    /*cursor:pointer;*/
+/*}*/
+
+/*.yellow {*/
+    /*background: white;*/
+/*}*/
+
+/*.orange {*/
+    /*background: lightgray;*/
+/*}*/
+
+/*.green {*/
+    /*background: lightgreen;*/
+/*}*/
+
+/*.red {*/
+    /*background: red;*/
+/*}*/
+
+/*.grayedSmall {*/
+    /*color: grey;*/
+    /*font-size: 70%;*/
+/*}*/
+
+/*.grayed {*/
+    /*color: grey;*/
+/*}*/
+
+/*.contentDiv {*/
+    /*padding:20px;*/
+/*}*/
+
+/*.center-block {*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+/*}*/
+
+/*.chart {*/
+    /*width: 500px;*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+/*}*/
+
+/*.hidingTable {*/
+    /*display:none;*/
+/*}*/
+
+/*.hidingTable:target {*/
+    /*display:inline;*/
+/*}*/
+
+/*.fw {*/
+    /*width: 100%;*/
+/*}*/
+
+/*.nav-cell {*/
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+/*}*/
+
+/*.pad-cell {*/
+    /*padding: 15px;*/
+/*}*/
+
+/*.section-cell {*/
+    /*margin: 5px;*/
+/*}*/
+
+/*.vpad {*/
+    /*padding-bottom: 20px;*/
+    /*top: 20px;*/
+/*}*/
+
+/*.right {*/
+    /*right: 0px;*/
+    /*!*width: 300px;*!*/
+    /*!*border:3px solid #8AC007;*!*/
+    /*padding-right: 10px;*/
+/*}*/
+

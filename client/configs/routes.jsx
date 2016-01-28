@@ -5,13 +5,25 @@ import {mount} from 'react-mounter';
 
 import MainLayout from '../components/layouts.main/index.jsx';
 import PostList from '../containers/postlist';
-import Post from '../containers/post';
-import NewPost from '../containers/newpost';
+import FileList from '../containers/filelist.jsx';
+import Post from '../containers/post.jsx';
+import NewPost from '../containers/newpost.jsx';
 
 export const initRoutes = (context, actions) => {
   const MainLayoutCtx = injectDeps(context, actions)(MainLayout);
 
+  console.log("PostList: " + PostList)
+
   // Move these as a module and call this from a main file
+  FlowRouter.route('/files', {
+    name: 'file.list',
+    action(postId) {
+      mount(MainLayoutCtx, {
+        content: () => (<FileList postId={postId}/>)
+      });
+    }
+  });
+
   FlowRouter.route('/', {
     name: 'posts.list',
     action() {

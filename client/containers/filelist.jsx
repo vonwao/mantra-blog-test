@@ -3,26 +3,30 @@ import {useDeps} from 'react-simple-di';
 import {composeWithTracker, composeAll} from 'react-komposer';
 import React from 'react';
 
-const PostList = ({posts}) => (
-  <div>
-    File list
-    <div className='row'>
-      <div className='col-xs-3'>
-        <div className='reportSections orange'>
-          <div className="ui link list">
-            {posts.map(post => (
-            <li key={post._id}>
-              <a href={`/post/${post._id}`}>{post.title}</a>
-            </li>
+const render = ({posts}) => {
+  const groups = _.groupBy(posts, item => {
+    return item.cat
+  });
+
+  return (
+    <div>
+      <div className="ui vertical menu">
+        {Object.keys(groups).map( key => (
+        <div className="item">
+          <div className="header">{key}</div>
+          <div className="menu">
+            {groups[key].map( item => (
+            <a className="item" href={`/post/${item._id}`}>{item.title}</a>
               ))}
           </div>
         </div>
+          ))}
       </div>
-  </div>
-  </div>
-);
+    </div>
+  );
+}
 
-export const composer = ({context}, onData) => {
+export const composer = ({context, postId}, onData) => {
   const {Meteor, Collections} = context();
   if (Meteor.subscribe('posts.list').ready()) {
     const posts = Collections.Posts.find().fetch();
@@ -33,4 +37,4 @@ export const composer = ({context}, onData) => {
 export default composeAll(
   composeWithTracker(composer),
   useDeps()
-)(PostList);
+)(render);

@@ -10,7 +10,7 @@ export const composer = ({context}, onData) => {
   }
 };
 
-export default composeAll(
-  composeWithTracker(composer),
-  useDeps()
-)(PostList);
+//export default composeAll(
+//  composeWithTracker(composer),
+//  useDeps()
+//)(PostList);
